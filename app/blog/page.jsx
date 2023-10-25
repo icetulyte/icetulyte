@@ -3,7 +3,7 @@ export const metadata = {
     openGraph: {
       title: 'Blog',
     },
-  }
+}
 
 export default function Index() {
     return (
