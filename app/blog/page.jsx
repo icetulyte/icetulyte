@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Layout from '../../components/layout'
+
 export const metadata = {
     title: 'Blog',
     openGraph: {
@@ -7,8 +10,11 @@ export const metadata = {
 
 export default function Index() {
     return (
-        <div>
-            Page is here
-        </div>
+        <Layout>
+            <h1>My blog is here</h1>
+            <h2>
+                <Link href="/"> Back to home</Link>
+            </h2>
+        </Layout>
     )
 }
