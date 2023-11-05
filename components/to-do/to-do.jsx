@@ -12,6 +12,7 @@ export default function ToDo() {
                 <li className={clsx({[styles.error]: true})}>Make a little interactive to do with firebase</li>
                 <li>Add a cv entries? LinkedIn already does the good job...</li>
                 <li>Take a look at Tailwind and what can it do for me?</li>
+                <li>CSS modules is a interesting thing to take a look at as well</li>
             </ul>
         </div>
     );
