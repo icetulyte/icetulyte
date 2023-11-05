@@ -1,0 +1,7 @@
+.container {
+    max-width: 20rem;
+}
+
+.container ul {
+    list-style: "\1F44D";
+}

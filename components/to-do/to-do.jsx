@@ -1,7 +1,9 @@
+import styles from './to-do.module.css'
+
 export default function ToDo() {
     return (
-        <div>
-            <ul className=" pl-8 py-4">
+        <div className={styles.container}>
+            <ul className="pl-8 py-4">
                 <li>Fetch the data from some API and think of something interesting to show</li>
                 <li>Make a little interactive to do with firebase</li>
                 <li>Add a cv entries? LinkedIn already does the good job...</li>
