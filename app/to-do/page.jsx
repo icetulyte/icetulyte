@@ -1,4 +1,4 @@
-import ToDo from './to-do'
+import ToDo from '../../components/to-do/to-do'
 
 export const metadata = {
     title: 'To do',
