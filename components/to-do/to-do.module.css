@@ -3,5 +3,13 @@
 }
 
 .container ul {
+    list-style: bullet;
+}
+
+.success {
     list-style: "\1F44D";
+}
+
+.error {
+    list-style: "\1F44E";
 }
