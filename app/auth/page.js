@@ -1,9 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, redirect } from 'next/navigation';
 
 export default function UserInfoPage () {
+    const user = null;
+
+    if (!user) {
+        return redirect('auth/login');
+    }
+
     // We'll use the history to navigate the user
     // programmatically later on (we're not using it yet)
     const router = useRouter();
