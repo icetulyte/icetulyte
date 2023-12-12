@@ -9,6 +9,8 @@ export default function Header() {
                 <Link className="pr-8" href="/blog">Blog</Link>
                 <Link className="pr-8" href="/to-do">To-do</Link>
                 <Link className="pr-8" href="/books">Books</Link>
+                <Link className="pr-8" href="/auth">Auth</Link>
+                <Link className="pr-8" href="/auth/login">Log in</Link>
             </nav>
         </header>
     )
