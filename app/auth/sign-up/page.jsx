@@ -19,7 +19,7 @@ const SignUpPage = () => {
         const response = await axios.post('api/signup', { email: emailValue, password: passwordValue });
         const { token } = response.data;
         setToken(token);
-        router.push('/auth/login');
+        router.push('/auth');
     }
     return (
         <div className={styles.inputs}>
