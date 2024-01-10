@@ -3,17 +3,23 @@
 import { useState } from 'react';
 import styles from './sign-up.module.css';
 import { useRouter } from 'next/navigation';
+import { useToken } from '../useToken';
+import axios from 'axios';
 
 const SignUpPage = () => {
+    const [token, setToken] = useToken();
     const [errorMessage, setErrorMessage] = useState('');
     const [emailValue, setEmailValue] = useState('');
-    const [passwordValue, setpasswordValue] = useState('');
+    const [passwordValue, setPasswordValue] = useState('');
     const [confirmPasswordValue, setConfirmPasswordValue] = useState('');
 
     const router = useRouter();
 
     const onSignUpClicked = async () => {
-        alert('Sign up not implemented yet');
+        const response = await axios.post('api/signup', { email: emailValue, password: passwordValue });
+        const { token } = response.data;
+        setToken(token);
+        router.push('/auth/login');
     }
     return (
         <div className={styles.inputs}>

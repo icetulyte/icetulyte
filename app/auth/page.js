@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter, redirect } from 'next/navigation';
+import { useUser } from './useUser';
 
 export default function UserInfoPage () {
-    const user = null;
+    const user = useUser();
 
     if (!user) {
         return redirect('auth/login');
